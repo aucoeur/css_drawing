@@ -1,0 +1,437 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid; 
+  grid-template-columns: repeat(4, 160px);
+  row-gap: 2em;
+}
+
+#red-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+#red-circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+#border-square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 8px solid black;
+}
+
+#one-corner {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 8px solid black;
+  border-radius: 0 0 0 50%;
+}
+
+#leaf{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(49, 202, 49);
+  border: 8px solid black;
+  border-radius: 0 50% 50% 50%;
+}
+
+#lemon{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 8px solid black;
+  border-radius: 0 50% 0% 50%;
+}
+
+#filebox {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 8px solid black;
+}
+
+#filebox:after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 18px;
+  background-color: black;
+  transform: translate(18px, 15px);
+}
+
+#equality {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 0, 143);
+  border: 8px solid black;
+}
+
+
+#equality:before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 18px;
+  background-color: rgb(255, 217, 0);
+  transform: translate(18px, 55px);
+}
+
+#equality:after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 18px;
+  background-color: rgb(255, 217, 0);
+  transform: translate(18px, 25px);
+}
+
+#swissflag {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(219, 0, 0);
+  border: 8px solid black;
+}
+
+#swissflag:before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background-color: white;
+  transform: translate(20px, 40px);
+}
+
+#swissflag:after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background-color: white;
+  transform: translate(20px, 40px) rotate(90deg);
+}
+
+#x {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 8px solid black;
+}
+
+#x:before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background-color: black;
+  transform: translate(20px, 40px) rotate(45deg);
+}
+
+#x:after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background-color: black;
+  transform: translate(20px, 40px) rotate(-45deg);
+}
+
+#circle-x {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 8px solid black;
+  border-radius: 50%;
+}
+
+#circle-x:before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background-color: black;
+  transform: translate(20px, 40px) rotate(45deg);
+}
+
+#circle-x:after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background-color: black;
+  transform: translate(20px, 40px) rotate(-45deg);
+}
+
+#arrow {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 8px solid black;
+  border-radius: 50%;
+}
+
+#arrow:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-right: 8px solid black;
+  border-bottom: 8px solid black;
+  transform: translate(40px, 30px) rotate(-45deg);
+}
+
+#arrow:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  background-color: black;
+  transform: translate(20px, 45px);
+}
+
+#madrobot {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(160, 176, 189);
+  border: 8px solid black;
+}
+
+#madrobot:before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 15px;
+  background-color: red;
+  border: 8px solid black;
+  border-radius: 15px;
+  transform: translate(10px, 55px);
+}
+
+#eyes {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border: 8px solid black;
+  border-radius: 50%;
+  transform: translate(10px, 10px);
+}
+
+#eyes:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border: 8px solid black;
+  border-radius: 50%;
+  transform: translate(35px, -8px);
+}
+
+#vampire {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 8px solid black;
+  border-radius: 20px 20px 35px 35px;
+}
+
+#vampire:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 0px;
+  border-top: 6px solid black;
+  border-left: 16px solid black;
+  border-right: 16px solid black;
+  border-bottom:  16px solid transparent;
+  transform: translate(15px, 65px);
+}
+
+#meaneyes {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 8px solid black;
+  border-radius: 0 50% 50%;
+  transform: translate(12px, 15px);
+}
+
+#meaneyes:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 8px solid black;
+  border-radius: 50% 0% 50% 50%;
+  transform: translate(35px, -8px);
+}
+
+#pupil {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+  transform: translate(8px, 12px);
+}
+
+#pupil:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+  transform: translate(40px, 0px);
+}
+
+#birb {
+  width: 100px; 
+  height: 100px; 
+  background-color: rgb(200, 230, 255);
+  border: 8px solid black;
+}
+#birb-body {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(59, 90, 126);
+  border-radius: 50% 50% 50% 0;
+  position: absolute;
+  transform: translate(24px, 36px);
+}
+
+#wing {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(66, 102, 143);
+  border-radius: 50% 50% 50% 0;
+  position: absolute;
+  border-right: 2px solid;
+  transform: translate(30px, 40px);
+}
+
+#birb-head {
+  width: 28px;
+  height: 28px;
+  background-color: rgb(59, 90, 126);
+  border-radius: 50% 0 50% 50%;
+  position: absolute;
+  transform: translate(52px, 14px) rotate(45deg);
+}
+
+#birb-head:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(8px, 8px)
+}
+
+#kirby {
+  width: 100px; 
+  height: 100px; 
+  background-color: rgb(193, 238, 255);
+  border: 8px solid black;
+}
+
+#kirby-body {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255, 146, 146);
+  border-radius: 50%;
+  transform: translate(10px, -38px);
+}
+
+#smol-eyes {
+  width: 4px;
+  height: 10px;
+  background-color: black;
+  transform: translate(25px, 2px) rotate(10deg);
+}
+#smol-eyes:after{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background-color: black;
+  transform: translate(16px, 0px);
+}
+
+#mouth {
+  position: absolute;
+  width: 28px;
+  height: 22px;
+  background-color: rgb(182, 55, 55);
+  border-radius: 50%;
+  transform: translate(20px, 5px) rotate(10deg);
+}
+
+#mouth:after{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  background-color: rgb(231, 112, 112);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(10px, 14px);
+}
+
+#foot {
+  width: 28px;
+  height: 20px;
+  background-color: rgb(250, 95, 95);
+  border-radius: 50%;
+  transform: translate(20px, 72px) 
+  rotate(-20deg);
+  z-index: ;
+}
+
+#foot:after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 20px;
+  background-color: rgb(250, 95, 95);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(42px, 10px);
+}
+
+#arms {
+  width: 10px;
+  height: 15px;
+  background-color: rgb(255, 146, 146);
+  border-radius: 50%;
+  border-right: 2px solid black;
+  position: absolute;
+  transform: translate(27px, 36px);
+}
+
+#arms:after {
+  content: "";
+  width: 10px;
+  height: 15px;
+  background-color: rgb(255, 146, 146);
+  border-radius: 50% ;
+  border-left: 2px solid black;
+  position: absolute;
+  transform: translate(48px, -8px);  
+}
